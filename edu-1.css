@@ -1,0 +1,447 @@
+/* For educational site */
+
+/* Global CSS */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: #673AB7;
+    --secondary-color:#D7272D;
+    --badge-color:#ffa500;
+}
+
+
+
+
+/* Header CSS var(--secondary-color) */
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border-right: solid 10px var(--primary-color);
+    border-bottom: dotted 10px var(--primary-color);
+}
+
+#header .hero {
+    position: absolute;
+    top: 20%;
+    left: -30%;
+    width: 400px;
+    height: 600px;
+    background-image: url(Student-2.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#header .iconify {
+    width: 40px;
+    height: 40px;
+}
+#header .title {
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    width: 230px;
+}
+#header .title .logo{
+    font-size: 5rem;
+    font-weight: 100;
+    color: var(--primary-color);
+}
+#header .title .add-1 {
+    color: var(--secondary-color);
+}
+
+#header .btn {
+    position: absolute;
+    bottom: 80px;
+    right: 150px;
+    background-color:  var(--primary-color);;
+    color: #fff;
+}
+#features {
+    width: 100%;
+    height: 260vh;
+    background-color: var(--primary-color);
+    border-top: dotted 10px #fff;
+    border-bottom: dotted 10px #fff;
+    padding: 50px 10px;
+   
+}
+.heading {
+    text-align: center;
+    color: #fff;
+}
+.feature-card {
+    width: 80%;
+    height: 70vh;
+    margin: 30px auto;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #000;
+}
+.feature-card:hover {
+    box-shadow: 4px 4px 50px #000;
+                
+}
+.feature-card .iconify {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 37%;
+    color:var(--secondary-color);
+}
+.card-contents {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    width: 90%;
+    text-align: center;
+}
+#cources {
+    width: 100%;
+    height: 250vh;
+    padding: 50px 10px;
+    border-top: dotted 10px var(--primary-color);
+    border-bottom: dotted 10px var(--primary-color);
+    
+}
+#cources .feature-card {
+    position: relative;
+    /* background: rgb(255,255,255);
+     background: linear-gradient(180deg, rgba(255,255,255,0) 60.5%, rgba(103,58,183,1) 56%); */
+    border-left: solid 10px var(--primary-color);
+}
+.feature-card img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 90%;
+    height: 50%;
+}
+.price {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: var(--badge-color);
+    border: solid 3px var(--secondary-color);
+    font-size: 4rem;
+    border-radius: 50%;
+    padding: 5px;
+}
+#cources .card-contents {
+    position: absolute;
+    top: 240px;
+}
+#register {
+    width: 100%;
+    height: 130vh;
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    border-top: dotted 10px #fff;
+    border-bottom: dotted 10px #fff;
+}
+#register .text {
+    color: #fff;
+}
+#register .text h3 {
+    text-align: center;
+}
+#register .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+#register .box {
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#register .box h1 {
+    line-height: 30px;
+    padding-top: 20px;
+}
+.reg-form {
+    width: 100%;
+    height: 50vh;
+    margin: 50px 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#trainer {
+    width: 100%;
+    height: 270vh;
+    padding: 50px 20px;
+    border-top: dotted 10px var(--primary-color);
+    border-bottom: dotted 10px var(--primary-color);
+}
+#trainer h1 {
+    text-align: center;
+    color:var(--secondary-color);
+}
+.trainer-card {
+    width: 90%;
+    height: 70vh;
+    box-shadow: 2px 2px 10px #000;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border-top: solid 10px var(--primary-color);
+    border-bottom: solid 10px var(--primary-color);
+
+}
+.trainer-card img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+   
+}
+.trainer-card h4 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-500%);
+    transition: 1s;
+    opacity: 0;
+    font-size: 2.5rem;
+    color:  var(--primary-color);;
+}
+.trainer-card:hover img {
+    opacity: 0.4;
+}
+.trainer-card:hover h4{
+    transform: translateY(0%);
+    opacity: 1;
+}
+#events {
+    width: 100%;
+    height: 230vh;
+    border-top: dotted 10px #fff;
+    border-bottom: dotted 10px #fff;
+    background-color: var(--primary-color);
+}
+#events .title {
+    text-align: center;
+    padding: 50px 0px;
+    color: #fff;
+}
+.single-event {
+    width: 90%;
+    height: 80vh;
+    margin: 50px auto;
+    border: solid 1px #fff;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.single-event:nth-of-type(1){
+    background-image: url(student-4.jpg);
+    background-size: cover;
+    
+}
+.single-event:nth-of-type(2){
+    background-image: url(student-5.jpg);
+    background-size: cover;
+}
+.single-event .contents {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 280px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 0px 10px 0px 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+.single-event .contents .detail {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-event .contents .detail .day {
+    font-size: 2.5rem;
+    line-height: 15px;
+    color: #ffa500;
+}
+.single-event .contents .detail .month {
+    font-size: 2rem;
+    line-height: 15px;
+}
+.single-event .contents .detail .place {
+    line-height: 10px;
+}
+.single-event .contents .line {
+    width: 4px;
+    height: 50px;
+    background-color: #ffa500;
+    margin: 0px 20px;
+}
+.single-event .contents .explain {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    height: 200px;
+}
+#footer {
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: dotted 10px var(--primary-color);
+    border-bottom: dotted 10px var(--primary-color);
+    color: #666;
+}
+.company {
+    width: 80%;
+    
+}
+#footer h4 {
+    color: var(--primary-color);
+}
+.letter {
+    width: 80%;
+}
+#copyright {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--primary-color);
+    border-top: dotted 10px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.social .iconify {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+.social .iconify:hover {
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+
+@media (min-width:700px){
+    #header .hero {
+        left: 10%;
+        width: 600px;
+        height: 800px;
+    }
+    #header .title {
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        width: 500px;
+        text-align: center;
+    }
+    #header .title .logo{
+        font-size: 10rem;
+        font-weight: 400;
+        color:  var(--primary-color);;
+        line-height: 130px;
+    }
+    #header .title .subline {
+        font-size: 2.3rem;
+        font-weight: 100;
+    }
+    #header .btn {
+        right: 425px;
+    }
+    #features {
+        height: 110vh;
+    }
+   .card-wraper {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .feature-card {
+        width: 30%;
+    }
+    #cources {
+        height: 110vh;
+    }
+
+    #register {
+        height: 80vh;
+        padding: 0px 50px;
+       display: flex;
+       justify-content:space-around;
+       align-items: center;
+       flex-direction: row;
+    }
+    #register .text {
+        padding: 0px 50px;
+    }
+    #register .reg-form {
+        width: 60%;
+    }
+    #trainer {
+        height: 110vh;
+    }
+    #trainer h1 {
+        padding: 50px 0px;
+    }
+    #trainer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer-card {
+        margin: 0px 20px;
+    }
+    #events {
+        height: 130vh;
+    }
+    .event-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .single-event {
+        width: 45%;
+        height: 80vh;
+        margin: 0px 10px;
+    }
+    .single-event .contents {
+        height: 35vh;
+    }
+    #footer {
+        height: 60vh;
+        padding:20px 50px;
+        flex-direction: row;
+    }
+}
